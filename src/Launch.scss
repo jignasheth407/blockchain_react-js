@@ -1,0 +1,148 @@
+@import './components/styles/colors.scss';
+// @import './components/styles/launchAnimation.scss';
+
+
+
+
+.launch-wrapper {
+	// @include launch;
+	background-color:transparent;
+	height: 100vh;
+    display: flex;
+    // margin-right: auto;
+    // margin-left: auto;
+}
+
+.background-wrapper-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.launch-container {
+	background:transparent;
+	width: 100vw;
+	height: 100vh;
+    margin-left: -31rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // padding: 2rem;
+}
+
+
+// Launch Form +++++++++++++++++++++++++++++++++
+
+.launch-button-form {
+    position: absolute;
+    top: 17.5rem;
+    right: 2rem;
+    left: 25rem;
+    width: 30rem;
+    height: 4rem;
+}
+
+.api-key {
+	position: absolute;
+    z-index:1;
+    width: 100%;
+    height:100%;
+    left: 0;
+    border: 0;
+    border-radius: 4px;
+    background: white;
+    outline: 0;
+    padding: 1em 1em 1em 1em;
+    color: $color-1;
+    transition: background 0.35s ease-out;
+    border-radius: 4rem;
+    padding-left:2rem;
+}
+
+.api-key:focus {
+    background:white;
+}
+
+.api-key:focus + .launch-button {
+    transform:scale(1.1);
+	margin-left:1rem;
+    color:white;
+    background: #202CE0;
+
+}
+
+.api-key::placeholder {
+    color:rgba(231, 228, 228, 0.7);
+    font-size:1rem;
+   
+}
+
+
+.launch-button {
+    position: absolute;
+    z-index:1;
+    top: 0.6rem;
+    right: -2rem;
+    width:7rem;
+    height: 4rem;
+    border: 0;
+    border-radius: 4rem;
+    font-size: 1em;
+    font-weight:500;
+    border:1px solid #202CE0;
+    background: white;
+    color: #202CE0;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 0.35s ease-out, width 0.5s ease-out, background 0.25s ease-out;
+   
+    &:hover {
+        background-color:#202CE0;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+	}
+	
+	&:active {
+		background: white;
+		color: darkblue;
+	}
+
+}
+
+.launch {
+	color: white;
+	text-decoration: none;
+		&:hover {
+			color: $color-1;
+		}
+}
+
+
+
+
+
+
+body {
+	text-align: center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+html, body {
+	height:100%;
+}
+
+
+
+html::after {
+	content:'';
+	background: linear-gradient(21deg, $color-1,$color-2);
+	height:3px;
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+}

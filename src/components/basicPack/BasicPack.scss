@@ -1,0 +1,41 @@
+@import './../styles/colors.scss';
+
+
+
+.basic-pack {
+	margin-right: 2rem;
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.1);
+		}
+
+}
+
+.pack-of-cards {
+	background-color: #202CE0;
+	width: 8rem;
+	height:10rem;
+	border-radius:2rem;
+}
+
+
+.button {
+	text-decoration: none;
+}
+
+.popupbtn {
+	outline: none;
+	border:none;
+	background:transparent;
+	&:hover {
+		cursor:pointer;
+	}
+}
+
+.popupbtn:focus {
+	background:transparent;
+	outline:none;
+	border:none;
+	border-radius:1rem;
+	border: 2px solid #202CE0;
+}

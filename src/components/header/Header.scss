@@ -1,0 +1,45 @@
+@import './../styles/colors.scss';
+@import './../styles/etherAnimation.scss';
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed');
+
+.dashboard-header {
+    background-color: $color-1;
+    height: 6rem;
+    flex-shrink: 0;
+    display: flex;
+    padding: 1.5rem;
+}
+
+.dashboard-text {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+.ether-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: darkblue;
+    font-size: 4rem;
+    color: $color-3;
+    animation: pulsate 10s infinite;
+  
+}
+
+.ether-text {
+    font-size: 1.3rem;
+    color: $color-3;
+    font-family: helvetica;
+    margin-top:0;
+}
+
+@keyframes pulsate {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0.75;
+    }
+};

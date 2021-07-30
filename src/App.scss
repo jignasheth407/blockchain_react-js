@@ -1,0 +1,134 @@
+@import './components/styles/colors.scss';
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed');
+
+html, body {
+    box-sizing:border-box;
+    margin: 0; 
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    background-color: #202CE0;
+    font-family: sans-serif;
+}
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #202CE0;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    font-family: "IBM Plex Sans Condensed";
+}
+
+my-cards-title {
+    margin-top:2rem;
+    color:grey;
+    font-size:1rem;
+}
+
+.my-cards-container {
+    display:flex;
+    justify-content: space-around;
+}
+
+.square-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right:auto;
+    margin-bottom:10rem;
+    margin-left:auto;
+    border-right: 2rem solid #202CE0;
+    border-bottom: 2rem solid #202CE0;
+    border-left: 2rem solid #202CE0;
+   
+}
+
+.other-players-cards {
+    height: 20rem;
+    width: 20rem;
+    background-color: white;
+    margin-right:auto;
+    margin-left: 1rem;
+    overflow: auto;
+    padding:2rem;
+}
+
+.middle-container {
+    margin-left:1rem;
+}
+
+.ether {
+    height: 7rem;
+    display: flex;
+    flex-direction:column;
+    font-weight: bold;
+    background-color:white;
+    margin-bottom:1rem;
+}
+
+.my-cards {
+    height: 20rem;
+    width: 20rem;
+    margin-left: auto;
+    background-color: white;
+    overflow:auto;
+    padding:2rem;
+}
+
+
+.amount-of-ether {
+    font-size:2rem;
+    
+}
+
+.text-style {
+    font-size:1.5rem;
+}
+
+.middle-white-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    border-right: 3rem solid #202CE0;
+    border-left: 3rem solid #202CE0;
+    width: 70rem;
+    height: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -11rem;
+    margin-bottom: 1rem;
+}
+
+.my-ledger{
+    margin-left: auto;
+}
+.joe-ledger{
+    margin-right: auto;
+}
+
+.the-ether-count {
+    width:6rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7rem;
+    margin-left: 9rem;
+}
+
+.ether-left {
+    font-size: 4rem;
+    margin-left: -3rem;
+    color: #F99243;
+}
+
+.ether-text {
+    font-size: 1rem;
+    margin-left: -3rem;
+    margin-top: .4rem;
+    color: #F99243;
+}

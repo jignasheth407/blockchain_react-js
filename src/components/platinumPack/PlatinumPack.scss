@@ -1,0 +1,37 @@
+@import './../styles/colors.scss';
+@import './platinumEffect.scss';
+
+.platinum-pack {
+    margin-right: 100px;
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer; 
+    }
+}
+
+.pack-of-platinumcards {
+	@include platinumeffect;
+	width: 8rem;
+    height: 10rem;
+	border-radius: 2rem;
+}
+
+.popupbtn-platinum{
+	border:none;
+	outline:none;
+	background:transparent;
+
+	&:hover {
+		cursor:pointer;
+	}
+}
+
+.popupbtn-platinum:focus {
+	background:transparent;
+	outline:none;
+	border:none;
+	border-radius:1rem;
+	border: 2px solid #202CE0;
+
+	
+}

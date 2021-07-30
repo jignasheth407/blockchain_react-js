@@ -1,0 +1,33 @@
+.popup {
+    background-color: rgb(32, 44, 224);
+    border-radius: 12px;
+    width: 2220px;
+    height: 1270px;
+    margin: 1040px auto;
+    padding: 30px;
+}
+
+.close {
+    margin-top: -38px;
+    margin-left: 2000px;
+}
+
+.closeBtn:hover {
+    cursor:pointer;
+}
+
+.demo-cards {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin-top: 300px;
+
+}
+
+.delay {
+    animation-delay: 2s;
+}
+
+.delay-second {
+    animation-delay: 4s;
+}
